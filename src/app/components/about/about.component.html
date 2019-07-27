@@ -1,0 +1,58 @@
+<div class="container">
+    <p>This WebApp fetches movie info from version 3 of <a href="https://developers.themoviedb.org/3"
+            target="_blank">The Movie Database (TMDb) API</a></p>
+    <hr>
+    <h2>Components</h2>
+
+    <h3>Movie</h3>
+    <p>Displays single movie info: image, title and overview</p>
+    <b>Methods:</b>
+    <br />ngOnInit()
+    <ul>
+        <li>Extracts movie id string from route paramaters</li>
+        <li>Subscribes to getMovie() service</li>
+        <li>Assigns data to the class movie members moviesService</li>
+    </ul>
+    goHome()
+    <ul>
+        <li>Users Angular router to navigate to home page</li>
+    </ul>
+
+    <h3>Home</h3>
+    <p>Displays popular movies info: image and title. Provides a link to more info on every movie listed</p>
+    <b>Methods:</b>
+    <br />ngOnInit()
+    <ul>
+        <li>Subscribes to getMovies() service</li>
+        <li>Assigns data to the class movie members moviesService</li>
+    </ul>
+    goToDetails()
+    <ul>
+        <li>Users Angular router to navigate to requested movie page</li>
+    </ul>
+
+    <h3>About</h3>
+    <p>Describes app logic.</p>
+    <hr>
+    <h2>Services</h2>
+
+    <h3>Movies Service</h3>
+    <p>Uses the Angular's http client to fetch data from the API. Declares base URLs and Api Key.</p>
+    <b>Methods:</b>
+    <br />getMovies()
+    <ul>
+        <li>Returns an Observable of popular movies.</li>
+    </ul>
+    getMovie(id)
+    <ul>
+        <li>Returns an Observable of requested movie.</li>
+    </ul>
+    getApiKey()
+    <ul>
+        <li>Returns the Api key (string).</li>
+    </ul>
+    getImgBaseUrl()
+    <ul>
+        <li>Returns the image base Url (string).</li>
+    </ul>
+</div>

@@ -1,0 +1,20 @@
+<div class="container">
+    <ng-template [ngIf]="movie" [ngIfElse]="noMovieData">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header text-center">
+                <img [src]="imgBaseUrl + '/w400' + movie.poster_path + '?api_key=' + apiKey" class="img-fluid mt-auto"
+                    alt="Responsive image">
+            </div>
+            <div class="card-body d-flex flex-column text-center">
+                <h5>{{movie.title}}</h5>
+                <p>
+                    {{movie.overview}}
+                </p>
+            </div>
+        </div>
+        <button type="button" class="btn btn-lg btn-primary" (click)="goHome()">Home</button>
+    </ng-template>
+    <ng-template #noMovieData>
+        Something went wrong with fetching movie data :(
+    </ng-template>
+</div>
