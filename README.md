@@ -1,4 +1,9 @@
 # DFWMovieList
 
-[App Webpage](https://sylada.github.io/DFWMovies/)
-[App details](https://sylada.github.io/DFWMovies/about)
+## App webpage 
+
+[Click here](https://sylada.github.io/DFWMovies/)
+
+## App details
+
+[Click here](https://sylada.github.io/DFWMovies/about)
